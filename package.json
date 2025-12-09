@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Punarvi Ayurveda - Organic All Natural Ayurvedic Products Website",
   "scripts": {
-    "deploy": "wrangler pages deploy ."
+    "deploy": "wrangler pages project create"
   },
   "devDependencies": {
     "wrangler": "^3.0.0"
