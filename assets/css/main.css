@@ -118,10 +118,27 @@ h3 {
 
 .nav-links a {
   transition: color 0.2s;
+  position: relative;
 }
 
 .nav-links a:hover {
   color: var(--brown-light);
+}
+
+.nav-links a.active {
+  color: var(--brown-medium);
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--brown-medium);
+  border-radius: 2px;
 }
 
 .btn-header {
@@ -869,6 +886,15 @@ h3 {
     gap: 1rem;
     font-size: 0.85rem;
     flex-direction: column;
+  }
+  
+  .nav-links a.active::after {
+    display: none;
+  }
+  
+  .nav-links a.active {
+    border-bottom: 2px solid var(--brown-medium);
+    padding-bottom: 0.25rem;
   }
 
   .btn-header {
