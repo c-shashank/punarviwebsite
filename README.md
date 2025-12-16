@@ -11,9 +11,7 @@ PurnaviWebsite/
 │   ├── js/
 │   │   └── main.js        # Main JavaScript file
 │   └── images/            # Image assets
-├── products/               # Product pages
-├── blog/                   # Blog pages
-└── data/                   # Data files (JSON, etc.)
+└── products/               # Product pages
 ```
 
 ## Getting Started
@@ -27,6 +25,8 @@ PurnaviWebsite/
 - **CSS**: `assets/css/main.css` - All styling
 - **JS**: `assets/js/main.js` - JavaScript functionality
 - **Images**: `assets/images/` - Place all images here
+
+
 
 
 

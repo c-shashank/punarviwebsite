@@ -1,9 +1,10 @@
 {
   "name": "punarvi-website",
   "version": "1.0.0",
-  "description": "Punarvi Ayurveda - Organic All Natural Ayurvedic Products Website",
+  "description": "Punarvi Ayurveda – Organic All Natural Ayurvedic Products Website",
   "scripts": {
-    "deploy": "wrangler pages project create"
+    "build": "echo 'No build step required'",
+    "deploy": "wrangler pages deploy dist"
   },
   "devDependencies": {
     "wrangler": "^3.0.0"
