@@ -25,5 +25,34 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // FAQ Accordion functionality
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+      const faqItem = this.closest('.faq-item');
+      const answer = faqItem.querySelector('.faq-answer');
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+      // Close all other FAQ items
+      faqQuestions.forEach(otherQuestion => {
+        if (otherQuestion !== this) {
+          const otherItem = otherQuestion.closest('.faq-item');
+          const otherAnswer = otherItem.querySelector('.faq-answer');
+          otherQuestion.setAttribute('aria-expanded', 'false');
+          otherAnswer.classList.remove('active');
+        }
+      });
+
+      // Toggle current FAQ item
+      if (isExpanded) {
+        this.setAttribute('aria-expanded', 'false');
+        answer.classList.remove('active');
+      } else {
+        this.setAttribute('aria-expanded', 'true');
+        answer.classList.add('active');
+      }
+    });
+  });
+
   console.log('Punarvi website loaded');
 });
