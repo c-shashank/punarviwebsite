@@ -750,14 +750,15 @@ h3 {
 .cta-title {
   font-size: 3rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 600;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .cta-description {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: var(--cream);
+  color: #fdf4e6;
   line-height: 1.6;
 }
 
@@ -1115,6 +1116,25 @@ h3 {
 
 .about-photo-placeholder span {
   max-width: 260px;
+}
+
+.about-photo {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+  object-fit: cover;
+  display: block;
+}
+
+.about-photo.tall {
+  min-height: 260px;
+  height: auto;
+}
+
+.about-photo.wide {
+  min-height: 180px;
+  height: auto;
 }
 
 @media (max-width: 900px) {
